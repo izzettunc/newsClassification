@@ -29,14 +29,17 @@ namespace newsClassification
             SaveFileDialog sf = new SaveFileDialog();
             sf.ShowDialog();
             string path = sf.FileName;
-            writer = new StreamWriter(path);
-            writer.WriteLine("fileName,assignedClass");
-            for(int i=0;i<result.GetLength(0);i++)
-            {
-                writer.WriteLine(fileNames[i] + "," + labels[result[i, 0]]);
+            if(!(path=="" || path == null))
+            { 
+                writer = new StreamWriter(path);
+                writer.WriteLine("fileName,assignedClass");
+                for(int i=0;i<result.GetLength(0);i++)
+                {
+                    writer.WriteLine(fileNames[i] + "," + labels[result[i, 0]]);
+                }
+                writer.WriteLine("Used method " + method + ",Time : " + ((int)(time*1000)) + " ms");
+                writer.Close();
             }
-            writer.WriteLine("Used method " + method + ",Time : " + ((int)(time*1000)) + " ms");
-            writer.Close(); 
         }
 
 
