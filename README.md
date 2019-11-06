@@ -144,6 +144,8 @@ rootFolder (Name is not important)
 ```
 
 **For stop words there isn't any real structure but I split words by lines so structure is look like this :**
+
+```
     word1
     word2
     word3
@@ -151,6 +153,7 @@ rootFolder (Name is not important)
     ..
     ..
     wordN
+```
 
 **Lastly if you don't want to use stop word an empty text file will be solution for you.**
 
