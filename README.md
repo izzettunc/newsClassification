@@ -7,9 +7,9 @@
     A news classfication application that uses three different NLP classfication algorithm.
     <br />
     <br />
-    <a href="https://github.com/izzettunc/dbscan/issues">Report Bug</a>
+    <a href="https://github.com/izzettunc/newsClassification/issues">Report Bug</a>
     ·
-    <a href="https://github.com/izzettunc/dbscan/issues">Request Feature</a>
+    <a href="https://github.com/izzettunc/newsClassification/issues">Request Feature</a>
   </p>
 </p>
 
@@ -90,13 +90,13 @@ git clone https://github.com/izzettunc/newsClassification.git
 #### Important Notice
 
 I use 2 different github project while devoloping this app.If you want ta scrap this project and use classes independetly
-make sure to add [BigFloat](https://github.com/izzettunc/dbscan/issues) for Multinomial Naive Bayes and [Nuve](https://github.com/hrzafer/nuve) for tokenizer.
+make sure to add [BigFloat](https://github.com/Osinko/BigFloat) for Multinomial Naive Bayes and [Nuve](https://github.com/hrzafer/nuve) for tokenizer.
 
-* I use [BigFloat](https://github.com/izzettunc/dbscan/issues) because while calculating ratios and probabilities of documents in MN Bayes result become so small that doesn't fit in double, real or float variable type
+* I use [BigFloat](https://github.com/Osinko/BigFloat) because while calculating ratios and probabilities of documents in MN Bayes result become so small that doesn't fit in double, real or float variable type
 
 * I use [Nuve](https://github.com/hrzafer/nuve) in Tokenizer for stemming Turkish words
 
-**Make sure to add System.Numerics assembly reference to your project if you wanna use [BigFloat](https://github.com/izzettunc/dbscan/issues). Because  BigInteger used while developing [BigFloat](https://github.com/izzettunc/dbscan/issues).**
+**Make sure to add System.Numerics assembly reference to your project if you wanna use [BigFloat](https://github.com/Osinko/BigFloat). Because  BigInteger used while developing [BigFloat](https://github.com/Osinko/BigFloat).**
 
 **Make sure to install [Nuve](https://github.com/hrzafer/nuve) to your project if you wanna use [Nuve](https://github.com/hrzafer/nuve) in your project**
 
@@ -169,7 +169,7 @@ rootFolder (Name is not important)
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/izzettunc/dbscan/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/izzettunc/newsClassification/issues) for a list of proposed features (and known issues).
 
 <!-- LICENSE -->
 ## License
@@ -186,12 +186,12 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/izzettunc
 [product-screenshot]: data/screenShots/header.png
-[app-screenshot]: data/screenshots/program.png
-[output-screenshot]: data/screenshots/output.png
-[result-screenshot]: data/screenshots/result.png
+[app-screenshot]: data/screenShots/program.png
+[output-screenshot]: data/screenShots/output.png
+[result-screenshot]: data/screenShots/result.png
 
-[knn-screenshot]: data/screenshots/knn_statistic.png
-[rocchio-screenshot]: data/screenshots/rocchio_statistic.png
-[mnbayes-screenshot]: data/screenshots/Mnbayes_statistics.png
-[accuracy-screenshot]: data/screenshots/acc_better.png
-[time-screenshot]: data/screenshots/time.png
+[knn-screenshot]: data/screenShots/knn_statistic.png
+[rocchio-screenshot]: data/screenShots/rocchio_statistic.png
+[mnbayes-screenshot]: data/screenShots/Mnbayes_statistics.png
+[accuracy-screenshot]: data/screenShots/acc_better.png
+[time-screenshot]: data/screenShots/time.png
