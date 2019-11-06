@@ -84,7 +84,9 @@ git clone https://github.com/izzettunc/newsClassification.git
 ```
 2. Open **newsClassification.sln** with Visual Studio
 
-3. Make changes, run it, use it whatever you like :smile:
+3. Restore nuget packages **[How to restore nuget packages ?](https://docs.microsoft.com/en-us/nuget/consume-packages/package-restore)**
+
+4. Make changes, run it, use it whatever you like :smile:
 
 #### Important Notice
 
