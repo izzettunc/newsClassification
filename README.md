@@ -185,7 +185,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/izzettunc
-[product-screenshot]: data/screenShots/header.png
+[product-screenshot]: data/screenShots/header.jph
 [app-screenshot]: data/screenShots/program.png
 [output-screenshot]: data/screenShots/output.png
 [result-screenshot]: data/screenShots/result.png
