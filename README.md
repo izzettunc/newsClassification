@@ -127,6 +127,7 @@ Here is some unneeded screenshots for how to use it
 While reading input files(train and test) I basically use DFS like algorithm to get each and every input file in every folder. So if you change input app won't going to work.
 
 **Input Structure:**
+```
 rootFolder (Name is not important)
   |
   |- className1
@@ -140,6 +141,7 @@ rootFolder (Name is not important)
   |- className3
   |	  |
   |	  |-Text files(Name is not important)
+```
 
 **For stop words there isn't any real structure but I split words by lines so structure is look like this :**
     word1
@@ -185,7 +187,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/izzettunc
-[product-screenshot]: data/screenShots/header.jph
+[product-screenshot]: data/screenShots/header.jpg
 [app-screenshot]: data/screenShots/program.png
 [output-screenshot]: data/screenShots/output.png
 [result-screenshot]: data/screenShots/result.png
