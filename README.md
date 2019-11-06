@@ -24,7 +24,7 @@
   * [Important Notice](#important-notice)
 * [Usage](#usage)
 * [Input structure](#about-input-structure)
-* [Comparison Of Methods](#comparison-of-methos)
+* [Comparison Of Methods](#comparison-of-methods)
   * [About Data](#about-data)
   * [Results](#results)
 * [Roadmap](#roadmap)
