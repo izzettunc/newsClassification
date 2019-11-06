@@ -22,7 +22,12 @@
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Installation](#installation)
+  * [Important Notice](#important-notice)
 * [Usage](#usage)
+* [Input structure](#about-input-structure)
+* [Comparison Of Methods](#comparison-of-methos)
+  * [About Data](#about-data)
+  * [Results](#results)
 * [Roadmap](#roadmap)
 * [License](#license)
 * [Contact](#contact)
@@ -82,27 +87,84 @@ git clone https://github.com/izzettunc/newsClassification.git
 
 3. Make changes, run it, use it whatever you like :smile:
 
-### Important Notice
+#### Important Notice
 
 I use 2 different github project while devoloping this app.If you want ta scrap this project and use classes independetly
 make sure to add [BigFloat](https://github.com/izzettunc/dbscan/issues) for Multinomial Naive Bayes and [Nuve](https://github.com/hrzafer/nuve) for tokenizer.
 
-* I use [BigFloat](https://github.com/izzettunc/dbscan/issues) because while calculating ratios and probabilities of documents in MN Bayes result become so small that doesn't fit in double,real or float variable type
+* I use [BigFloat](https://github.com/izzettunc/dbscan/issues) because while calculating ratios and probabilities of documents in MN Bayes result become so small that doesn't fit in double, real or float variable type
 
 * I use [Nuve](https://github.com/hrzafer/nuve) in Tokenizer for stemming Turkish words
 
-**Make sure to add System.Numerics assembly reference to your project if you wanna use [BigFloat](https://github.com/izzettunc/dbscan/issues).Because  BigInteger used while developing [BigFloat](https://github.com/izzettunc/dbscan/issues).**
+**Make sure to add System.Numerics assembly reference to your project if you wanna use [BigFloat](https://github.com/izzettunc/dbscan/issues). Because  BigInteger used while developing [BigFloat](https://github.com/izzettunc/dbscan/issues).**
 
 **Make sure to install [Nuve](https://github.com/hrzafer/nuve) to your project if you wanna use [Nuve](https://github.com/hrzafer/nuve) in your project**
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Application made in turkish which is my mother tongue.So here is some unneeded screenshots for how to use it
+Here is some unneeded screenshots for how to use it
 
+* Select training files root folder **Don't forget! Input should look like [Input structure](#about-input-structure)**
+* Select test files root folder **Don't forget! Input should look like [Input structure](#about-input-structure)**
+* If it's real data check unlabeled checkbox
+* Select stop words file **Don't forget! Input should look like [Input structure](#about-input-structure)**
+* Check at least one classification method checkbox **If you select K-NN you must also select distance function and K value, If you select rocchio selecting distance function will be enough.In case of both K-NN and Rocchio selection both method will use same distance function**
+* Press start
+* Also you can open up visual if you close it accidently by clicking visualize
 ![Application Screen Shot][app-screenshot]
 
+**For every method you select app will be ask to you where it should save results. If you don't want to save result simply close to pop-up and app will continue.**
+
+![Output Screen Shot][output-screenshot]
+
+**If you save the result. Result will be in csv format and contains documents and assigned classes of them. Also last row will be name of the method and execution time**
+
 ![Result File Screen Shot][result-screenshot]
+
+## About Input Structure
+
+While reading input files(train and test) I basically use DFS like algorithm to get each and every input file in every folder. So if you change input app won't going to work.
+
+**Input Structure:**
+rootFolder (Name is not important)
+  |
+  |- className1
+  |	  |
+  |	  |-Text files(Name is not important)
+  |
+  |- className2
+  |	  |
+  |	  |-Text files(Name is not important)
+  |
+  |- className3
+  |	  |
+  |	  |-Text files(Name is not important)
+
+**For stop words there isn't any real structure but I split words by lines so structure is look like this :**
+    word1
+    word2
+    word3
+    ..
+    ..
+    ..
+    wordN
+
+**Lastly if you don't want to use stop word an empty text file will be solution for you.**
+
+## Comparison Of Methods
+
+### About data
+
+  The data is different news which is retrieved from several news website. There is 4 class Economy(Ekonomi),Magazine(Magazine),Health(Sağlık),Sport(Spor).Train data consists of 600 documents and Test data consists of 320 documents. All the documents are in Turkish. Documents are not in a format and there is misspellings, foreign words, brand names etc.
+
+### Results
+
+![Accuracy chart][accuracy-screenshot]
+![Execution time chart][time-screenshot]
+![MNB Performance][mnbayes-screenshot]
+![Rocchio Performance][rocchio-screenshot]
+![KNN Performance][knn-screenshot]
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -123,6 +185,13 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/izzettunc
-[product-screenshot]: data/screenshots/dbscan.png
-[app-screenshot]: data/screenshots/application.png
-[result-screenshot]: data/screenshots/result_file.png
+[product-screenshot]: data/screenShots/header.png
+[app-screenshot]: data/screenshots/program.png
+[output-screenshot]: data/screenshots/output.png
+[result-screenshot]: data/screenshots/result.png
+
+[knn-screenshot]: data/screenshots/k-nn statistic.png
+[rocchio-screenshot]: data/screenshots/rocchio statistic.png
+[mnbayes-screenshot]: data/screenshots/Mnbayes statistics.png
+[accuracy-screenshot]: data/screenshots/acc_better.png
+[time-screenshot]: data/screenshots/time.png
