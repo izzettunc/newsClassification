@@ -190,8 +190,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [output-screenshot]: data/screenshots/output.png
 [result-screenshot]: data/screenshots/result.png
 
-[knn-screenshot]: data/screenshots/k-nn statistic.png
-[rocchio-screenshot]: data/screenshots/rocchio statistic.png
-[mnbayes-screenshot]: data/screenshots/Mnbayes statistics.png
+[knn-screenshot]: data/screenshots/knn_statistic.png
+[rocchio-screenshot]: data/screenshots/rocchio_statistic.png
+[mnbayes-screenshot]: data/screenshots/Mnbayes_statistics.png
 [accuracy-screenshot]: data/screenshots/acc_better.png
 [time-screenshot]: data/screenshots/time.png
