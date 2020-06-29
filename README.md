@@ -38,7 +38,7 @@
 
 ![Product Name Screen Shot][product-screenshot]
 
-This project made as a class assignment.It's purpose basically classifying given test data by learned information from train data using classification algorithms.I use three different method for compare them between each other.These three algortihms are K-NN -that using four different distance method which them are Pearson Corelation Coefficient,Cosine Similarity,Euler Distance,Manhattan Distance- , Multinomial Naive Bayes and Rocchio -that using same distance methods as K-NN -
+This project made as a class assignment.Its purpose is basically classifying given test data by learned information from train data using classification algorithms.I use three different method for compare them between each other.These three algortihms are K-NN -that using four different distance method which them are Pearson Corelation Coefficient,Cosine Similarity,Euler Distance,Manhattan Distance- , Multinomial Naive Bayes and Rocchio -that using same distance methods as K-NN -
 
 **Features:**
 
